@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  form(class ="row g-5", action="/submit")
+    .col-md-2 
+      label(for="char1", class="form-label") Char 1
+      input(type="text" class="form-control" id="char1", name="char1")
+    .col-md-2 
+      label(for="char2", class="form-label") Char 2
+      input(type="text" class="form-control" id="char2", name="char2")
+    .col-md-2 
+      label(for="char3", class="form-label") Char 3
+      input(type="text" class="form-control" id="char3", name="char3")
+    .col-md-2 
+      label(for="char4", class="form-label") Char 4
+      input(type="text" class="form-control" id="char4", name="char4")
+    .col-md-2 
+      label(for="char5", class="form-label") Char 5
+      input(type="text" class="form-control" id="char5", name="char5")
+    .col-12 
+      button(class="btn btn-primary" type="submit") Submit
